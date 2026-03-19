@@ -42,7 +42,7 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 
 ## 🧹 Data Processing Logic
 
-- Standardized priority values (Lw → Low, etc.)
+- Standardized priority values (Lw → Low, Medum → Medium, Hgh → High)
 - Removed negative response times
 - Parsed logs using regex
 - Converted timestamps
@@ -54,7 +54,7 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 ## 📊 Key Features
 
 - Event-driven architecture (fully automated)
-- Handles both structured (CSV) & semi-structured (logs)
+- Handles both structured (CSV) & semi-structured (log files)
 - Schema validation to prevent Redshift load failures
 - Incremental loading using Lambda triggers
 - Optimized Parquet storage for analytics
@@ -65,7 +65,7 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 
 - Reduced data processing latency by ~40% using event-driven triggers
 - Improved query performance by ~60% using columnar Parquet format
-- Enabled real-time monitoring of support system performance
+- Enabled near real-time monitoring of support system performance
 - Identified high-latency interactions and error patterns
 
 ---
@@ -81,6 +81,24 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 
 ---
 
+## 📸 Project Screenshots
+
+### 🏗️ Pipeline Execution & Data Flow
+![s3 Structure](assets/s3_structure.png)
+![Lambda Trigger](assets/lambda_trigger.png)
+![Glue Trigger](assets/glue_trigger.png)
+
+---
+
+### 📊 Power BI Dashboard (Key Insights)
+> These dashboards highlight response time trends, system load (CPU), and error monitoring.
+
+![Dashboard Overview](assets/dashboard_1.png)
+![Response Time Analysis](assets/dashboard_2.png)
+![Error & Performance Insights](assets/dashboard_3.png)
+
+---
+
 ## 🚀 Future Improvements
 
 - Add partitioning strategy in S3
@@ -93,4 +111,4 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 ## 👨‍💻 Author
 
 Rohit Bhakta  
-Data Analyst
+Data Analyst  transitioning → Data Engineering 
