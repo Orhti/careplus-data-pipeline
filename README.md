@@ -70,12 +70,6 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 
 ---
 
-## 📂 Repository Structure
-
-(Explain folders briefly)
-
----
-
 ## ⚠️ Challenges & Solutions
 
 | Challenge | Solution |
