@@ -81,6 +81,19 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 
 ---
 
+## ▶️ How to Run This Project
+
+1. Upload raw data (CSV / LOG files) to S3
+2. Lambda is triggered automatically
+3. Glue job processes and transforms data
+4. Processed data is stored in Parquet format in S3
+5. Load data into Redshift using COPY command
+6. Connect Power BI to Redshift for visualization
+
+> Note: AWS credentials and resources are not included for security reasons.
+
+---
+
 ## 📸 Project Screenshots
 
 ### 🏗️ Pipeline Execution & Data Flow
@@ -96,6 +109,16 @@ S3 (Raw) → Lambda → Glue → S3 (Processed - Parquet) → Redshift → Power
 ![Dashboard Overview](assets/dashboard_1.png)
 ![Response Time Analysis](assets/dashboard_2.png)
 ![Error & Performance Insights](assets/dashboard_3.png)
+
+---
+
+## 🧠 Key Learnings
+
+- Handling schema mismatches between Parquet and Redshift
+- Designing event-driven pipelines using AWS services
+- Debugging data type issues (INT vs BIGINT, timestamp handling)
+- Managing schema drift in Power BI
+- Building production-style ETL pipelines with error handling
 
 ---
 
